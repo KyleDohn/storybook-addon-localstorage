@@ -25,7 +25,7 @@ export const withLocalStorage = makeDecorator({
 
     useEffect(() => {
       Object.entries(paramValues).forEach(([key, value]) => {
-        window.localStorage.setItem(key, String(value));
+        window.localStorage.setItem(key, value);
       });
 
       return () => {
